@@ -1,8 +1,8 @@
 package models;
 
 public class ComponenteVehicular {
-    private String codigo;
-    private String fabricante;
+    String codigo;
+    String fabricante;
 
     public ComponenteVehicular(String codigo, String fabricante){
         this.codigo = codigo;
