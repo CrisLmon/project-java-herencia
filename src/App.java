@@ -1,10 +1,12 @@
 import models.Motor;
+import models.Neumatico;
 import models.Transmision;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Motor motor = new Motor("M001", "Bosch", 4, 120);
         Transmision transmision = new Transmision("T001", "ZF", "Automática", 6);
+        Neumatico neumatico = new Neumatico("N001", "Michelin", 17, 32.5);
 
         System.out.println("==== MOTOR ====");
         motor.mostrarInformacion();
@@ -13,6 +15,14 @@ public class App {
         System.out.println("\n==== TRANSMISIÓN ====");
         transmision.mostrarInformacion();
         transmision.cambiarMarcha(3);
+
+        System.out.println("\n==== NEUMÁTICO ====");
+        neumatico.mostrarInformacion();
+        neumatico.verificarPresion();
+
+        
+
+        
 
     }
 }
